@@ -1,62 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convite de Aniversario</title>
-    <style>
-        body {
-            
-            background-size: cover;        /* ocupa toda a tela */
-            background-position: center;   /* centraliza */
-            background-repeat: no-repeat;  /* não repete */
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convite de Aniversario</title>
 
-        .convite {
-            width: 360px;  
-            width: 360px;
-            height: 640px; /* altura do convite */
-            background-image: url("convite.png");
-            background-size: cover;
-            background-position: center;
-            position: relative;  
-            
-        }
+<style>
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
 
-        .convite img {
-            width: 100%;       /* faz a imagem se ajustar */
-            height: auto;      /* mantém proporção */
-            border-radius: 10px; /* opcional (deixa bonito) */
-        }
+.convite {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
 
-        .selo-link {
-            position: absolute;
-            
-            bottom: 200px;
-            top: 508px;
-            right: 50px;
-            left: 140px;
-            width: 85px;
-            height: 85px;
-            opacity: 0;
-            display: block;
-    }
-        
+.convite img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-
-
-
-
-
-    </style>
+/* área clicável responsiva */
+.selo-link {
+    position: absolute;
+    width: 23%;
+    height: 14%;
+    top: 60%;
+    left: 38%;
+    opacity: 0;
+    
+}
+</style>
 </head>
-<body>
-    <div class="convite">
-        <img src="./assets/img/Convite_de_Aniversario.png">
 
-        <a href="./telaPrincipal.html" class="selo-link"> link interarivo</a>
-        
-    </div>
+<body>
+
+<div class="convite">
+    <img src="./assets/img/Convite_de_Aniversario.png">
+    <a href="./telaPrincipal.html" class="selo-link"></a>
+</div>
 
 </body>
 </html>

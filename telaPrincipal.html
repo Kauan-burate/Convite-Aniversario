@@ -1,90 +1,75 @@
 <!DOCTYPE html>
-<html lang="ptbr">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convite de aniversário </title>
-    <style>
-         body {
-            background-size: cover;        /* ocupa toda a tela */
-            background-position: center;   /* centraliza */
-            background-repeat: no-repeat;  /* não repete */
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convite de aniversário</title>
 
-        .convite {
-            width: 360px;  
-            width: 360px;
-            height: 640px; /* altura do convite */
-            background-image: url("convite.png");
-            background-size: cover;
-            background-position: center;
-            position: relative;  
-            
-        }
+<style>
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
 
-        .convite img {
-            width: 100%;       /* faz a imagem se ajustar */
-            height: auto;      /* mantém proporção */
-            border-radius: 10px; /* opcional (deixa bonito) */
-        }
+.telaPrincipal {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
 
-        .local-link{
-            position: absolute;
-            width: 68px;
-            height: 68px;
-            bottom: 200px;
-            right: 150px;
-            left: 70px;
-            top: 555px;
-            opacity: 0;
-            display: block;
-        }
-        .presenca-link{
-            position: absolute;
-            width: 68px;
-            height: 68px;
-            bottom: 200px;
-            top: 596px;
-            right: 45px;
-            left: 153px;
-            opacity: 0;
-            display: block;
-        }
-        .sujestoes-link{
-            position: absolute;
-            width: 68px;
-            height: 68px;
-            bottom: 200px;
-            top: 552px;
-            left: 255px;
-            opacity: 0;
-            display: block;
+.telaPrincipal img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-        }
+/* LINKS RESPONSIVOS */
 
-        
-    </style>
+.local-link {
+    position: absolute;
+    width: 18%;
+    height: 10%;
+    top: 66%;
+    left: 17%;
+    opacity: 0;
+    
+}
+
+.presenca-link {
+    position: absolute;
+    width: 18%;
+    height: 10%;
+    top: 73%;
+    left: 40%;
+    opacity: 0;
+}
+
+.sujestoes-link {
+    position: absolute;
+    width: 18%;
+    height: 10%;
+    top: 66%;
+    left: 70%;
+    opacity: 0;
+}
+</style>
 
 </head>
+
 <body>
-    <div class="telaPrincipal">
-        <img src="./assets/img/tela principal.png" alt="imagem da tela principal">
 
-        <a href="https://maps.app.goo.gl/mHSaJjKQCQkg9uTP6" class="local-link"> local</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScNGgRO8C-V03WOx6VmuNXLnWltMwJWzOeMTel3T4VtAf9qIA/viewform" class="presenca-link"> presenca</a> 
-        <a href="./listaDeItens.html" class="sujestoes-link"> sujestao</a>
+<div class="telaPrincipal">
+    <img src="./assets/img/tela principal.png">
 
+    <a href="https://maps.app.goo.gl/mHSaJjKQCQkg9uTP6" class="local-link"></a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScNGgRO8C-V03WOx6VmuNXLnWltMwJWzOeMTel3T4VtAf9qIA/viewform" class="presenca-link"></a> 
+    <a href="./listaDeItens.html" class="sujestoes-link"></a>
 
-    </div>
+</div>
 
-
-
-
-
-
-
-
-
-    
 </body>
 </html>
